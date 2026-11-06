@@ -1,0 +1,14 @@
+# Ignore environment files containing secrets
+.env
+
+# Backup files
+*.bak
+
+# OS generated files
+.DS_Store
+
+# Node modules (if applicable)
+node_modules/
+
+# Logs
+*.log
