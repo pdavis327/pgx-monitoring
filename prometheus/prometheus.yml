@@ -10,18 +10,18 @@ scrape_configs:
   - job_name: pgx_dcgm
     scheme: http
     static_configs:
-      - targets: ['${TAILSCALE_HOST}:9400']
+      - targets: ['pgx.tail132677.ts.net:9400']
         labels:
           instance: pgx-dcgm
   - job_name: pgx_node_exporter
     scheme: http
     static_configs:
-      - targets: ['${TAILSCALE_HOST}:9100']
+      - targets: ['pgx.tail132677.ts.net:9100']
         labels:
           instance: pgx-node
   - job_name: pgx_vllm
     scheme: https
     static_configs:
-      - targets: ['${TAILSCALE_HOST}:443']
+      - targets: ['pgx.tail132677.ts.net:443']
         labels:
           instance: pgx-vllm

@@ -4,8 +4,6 @@ services:
     image: prom/prometheus:latest
     restart: unless-stopped
     network_mode: host # Ubuntu/Linux: use host Tailscale connectivity
-    environment:
-      TAILSCALE_HOST: ${TAILSCALE_HOST}
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.path=/prometheus
